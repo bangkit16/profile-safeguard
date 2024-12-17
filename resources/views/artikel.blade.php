@@ -164,12 +164,12 @@
                 <nav id="navmenu" class="navmenu">
                     <ul class="gy-2">
                         <li>
-                            <a href="#hero" class="active">Home<br /></a>
+                            <a href="{{url('/')}}" class="active">Home<br /></a>
                         </li>
-                        <li><a href="#about">Tentang</a></li>
-                        <li><a href="#services">Layanan</a></li>
-                        <li><a href="#why">Mengapa Kami?</a></li>
-                        <li><a href="#contact">Kontak </a></li>
+                        <li><a href="{{url('/#about')}}">Tentang</a></li>
+                        <li><a href="{{url('/#services')}}">Layanan</a></li>
+                        <li><a href="{{url('/#why')}}">Mengapa Kami?</a></li>
+                        <li><a href="{{url('/#contact')}}">Kontak </a></li>
                         @auth
                             <li><a class="bg-primary px-2 py-1 rounded" href="{{ route('home') }}">Dashboard</a></li>
                         @else
